@@ -1,0 +1,21 @@
+# This is my first .yaml file
+name: Alfaiz Mansoor
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: 
+
+jobs:
+  role:
+    runs_on: ubuntu-latest
+    types:
+      - stream: Devops Engineer
+
+  experience:
+    runs_on: ubuntu-latest
+      year: 1-year
+
+  learning:
+    runs_on: ubuntu-latest
+      boolean: true
