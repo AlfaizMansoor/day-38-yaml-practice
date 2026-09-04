@@ -28,6 +28,3 @@ jobs:
     steps:
       - name: still learning
         run: echo "Learning devops:True"
-    steps:
-      - name: value
-        run: echo "learning devops: True"
