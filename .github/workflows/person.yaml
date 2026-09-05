@@ -8,7 +8,7 @@ on:
 
 jobs:
   role:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     types:
       - stream: Devops Engineer
     steps:
@@ -16,15 +16,14 @@ jobs:
         run: echo "Devops Engineer"
 
   experience:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     year: months
     steps:
       - name: years of experience
-        run: echo "years of experience"
+        run: echo "years of experience:1"
 
   learning:
-    runs_on: ubuntu-latest
-    boolean: yes 
+    runs-on: ubuntu-latest
     steps:
       - name: still learning
-        run: echo "Learning devops:True"
+        run: echo "boolean: True"
