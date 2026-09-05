@@ -1,5 +1,22 @@
 # My first yaml file
 name: Alfaiz
-role: Devops Engineer
-experience_years: 0.6
-learning: true
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  role: 
+    runs-on: ubuntu-latest
+    outputs:
+        job_role: Devops Engineer
+  
+  experience: 
+    runs-on: ubuntu-latest
+    outputs:
+      years: 0.6
+      
+  learning:
+    runs-on: ubuntu-latest
+    outputs:
+      boolean: true
