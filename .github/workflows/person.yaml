@@ -4,26 +4,15 @@ name: Alfaiz Mansoor
 on:
   push:
     branches: [main]
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
-  role:
+  biodata:
+    # This is github runner
     runs-on: ubuntu-latest
-    types:
-      - stream: Devops Engineer
-    steps:
-      - name: job role
-        run: echo "Devops Engineer"
-
-  experience:
-    runs-on: ubuntu-latest
-    year: months
-    steps:
-      - name: years of experience
-        run: echo "years of experience:1"
-
-  learning:
-    runs-on: ubuntu-latest
-    steps:
-      - name: still learning
-        run: echo "boolean: True"
+    env:
+      name: Alfaiz Mansuri
+      role: devops engineer
+      experience: 0.6-year
+      learning: github action
+      
